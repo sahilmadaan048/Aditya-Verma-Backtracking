@@ -74,10 +74,13 @@ void permutations(vector<string>& ans, string &curr, string ip, int n) {
     unordered_set<char> st;  // Create a new set at each recursion level
     for(int i = 0; i < ip.size(); i++) {  
         if(st.find(ip[i]) == st.end()) {  // Ensure unique characters at this level
+            // cout<<ip[i]<<endl;
             st.insert(ip[i]);  // Mark the character as used at this level
             
             string newop = curr + ip[i];
+            // cout<<newop;
             string newip = ip.substr(0, i) + ip.substr(i + 1);
+            // cout<<newip;
             
             permutations(ans, newop, newip, n);
         }
