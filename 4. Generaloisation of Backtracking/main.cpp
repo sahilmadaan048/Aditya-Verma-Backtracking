@@ -34,7 +34,7 @@ void solve*&v() {
 
     for (ch in choices) {
         if(isvalid == true){
-            choice is _INLINE_VARIABLES_SUPPORTED
+            choice is there
             solve(v)
             revert changes in v   //this is backtracking
         }
