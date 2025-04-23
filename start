@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "🔧 Compiling..."
+g++ main.cpp -o main || exit 1
+
+echo "🎯 Running ..."
+./main || exit 1
+
+# will run in git bash on ../start
